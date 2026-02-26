@@ -1,0 +1,38 @@
+export const banksMock = [
+  {
+    _id: "1",
+    bankName: "Awash Bank",
+    to: "CoreFit Gym",
+    accountNumber: "1000123456789",
+    imageUrl: "https://via.placeholder.com/150",
+    visibility: true,
+    createdAt: "2026-02-20T23:12:53.853Z",
+  },
+  {
+    _id: "2",
+    bankName: "Commercial Bank of Ethiopia",
+    to: "CoreFit Gym",
+    accountNumber: "1000456789123",
+    imageUrl: "https://via.placeholder.com/150",
+    visibility: false,
+    createdAt: "2026-02-18T10:22:00.000Z",
+  },
+  {
+    _id: "3",
+    bankName: "Dashen Bank",
+    to: "CoreFit Gym",
+    accountNumber: "1000789456123",
+    imageUrl: "https://via.placeholder.com/150",
+    visibility: true,
+    createdAt: "2026-02-15T14:45:00.000Z",
+  },
+  {
+    _id: "4",
+    bankName: "Bank of Abyssinia",
+    to: "CoreFit Gym",
+    accountNumber: "1000111222333",
+    imageUrl: "https://via.placeholder.com/150",
+    visibility: false,
+    createdAt: "2026-02-10T08:15:00.000Z",
+  },
+];

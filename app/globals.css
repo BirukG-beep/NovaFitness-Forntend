@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat);
+}
+.clip-path-hero {
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 30% 100%);
+  }
+  .clip-path-left {
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .clip-path-right {
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+  }
+  .clip-path-hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .clip-path-hexagon-fix {
+    clip-path: polygon(0 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  .rotate-x-180 {
+    transform: rotateX(180deg);
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .perspective {
+    perspective: 100000px;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  /* Hide scrollbar but allow scrolling */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.cusrsive{
+  font-family:cursive;
+}
+/* Hide scrollbar but allow scroll */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
