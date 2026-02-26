@@ -53,7 +53,7 @@ const Payment = () => {
       formData.append("accountNumber", selectedBank.accountNumber);
       formData.append("image", file);
       formData.append("userId", userId);
-      const res = await fetch("http://localhost:4000/api/banks", {
+      const res = await fetch("https://novabackend-kyw2.onrender.com/api/banks", {
         method: "POST",
         body: formData,
       });

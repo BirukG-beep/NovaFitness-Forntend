@@ -1,5 +1,5 @@
 export  const getLastYear = (id) => {
-    return fetch(`http://localhost:4000/api/payment/${id}`)
+    return fetch(`https://novabackend-kyw2.onrender.com/api/payment/${id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched person data:", data);

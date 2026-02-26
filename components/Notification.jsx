@@ -11,7 +11,7 @@ const Notification = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:4000/api/banks");
+        const res = await fetch("https://novabackend-kyw2.onrender.com/api/banks");
         const result = await res.json();
         setData(result.banks.reverse()); // only banks array
       } catch (error) {
@@ -41,7 +41,7 @@ const Notification = () => {
 });
 
 const handleToggleVisibility = async (id)  =>{
-  const result = await fetch(`http://localhost:4000/api/banks/:${id}/visibility`,{
+  const result = await fetch(`https://novabackend-kyw2.onrender.com/api/banks/:${id}/visibility`,{
     method:"PATCH"
   })
   console.log(result.json())

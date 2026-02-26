@@ -2,7 +2,7 @@ import { toast } from "sonner";
 
 export const Register = async (data) => {
   try {
-    const res = await fetch("http://localhost:4000/api/auth/register", {
+    const res = await fetch("https://novabackend-kyw2.onrender.com/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

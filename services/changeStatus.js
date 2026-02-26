@@ -1,7 +1,7 @@
 const changeStatus = async (userId, month, newStatus) => {
   try {
     // setLoading(true);
-    const res = await fetch("http://localhost:4000/api/payment/updatePaymentStatus", {
+    const res = await fetch("https://novabackend-kyw2.onrender.com/api/payment/updatePaymentStatus", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId, month, status: newStatus }),

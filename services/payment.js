@@ -5,7 +5,7 @@ export const payment = async (userId) => {
   const toastId = toast.loading("Processing payment...");
 
   try {
-    const res = await fetch(`http://localhost:4000/api/payment/${userId}`);
+    const res = await fetch(`https://novabackend-kyw2.onrender.com/api/payment/${userId}`);
 
     const result = await res.json();
 
@@ -26,7 +26,7 @@ export const allpayment = async (year) => {
   const toastId = toast.loading("Processing payment...");
 
   try {
-    const res = await fetch(`http://localhost:4000/api/payment?year=${year}`,{
+    const res = await fetch(`https://novabackend-kyw2.onrender.com/api/payment?year=${year}`,{
          method: "POST",
          headers: {
         "Content-Type": "application/json",

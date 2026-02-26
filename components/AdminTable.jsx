@@ -160,7 +160,7 @@ const MonthlyStatusTable = ({
   const changeStatus = async (userId, month, newStatus) => {
     try {
       const res = await fetch(
-        "http://localhost:4000/api/payment/updatePaymentStatus",
+        "https://novabackend-kyw2.onrender.com/api/payment/updatePaymentStatus",
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

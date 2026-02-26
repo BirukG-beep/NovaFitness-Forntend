@@ -5,7 +5,7 @@ export const paymentAll = async () => {
   const toastId = toast.loading("Processing payment...");
 
   try {
-    const res = await fetch(`http://localhost:4000/api/auth/`);
+    const res = await fetch(`https://novabackend-kyw2.onrender.com/api/auth/`);
 
     const result = await res.json();
 
