@@ -14,6 +14,8 @@ const ImageGalleryPage = () => {
   const { id } = useParams();
   const router = useRouter();
 
+  const [image , setImage] = useState("")
+
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -124,6 +126,7 @@ const ImageGalleryPage = () => {
                 src={item.imageUrl}
                 alt="Bank"
                 className="h-full w-full object-contain p-4"
+                onClick={()=>setImage(item.imageUrl)}
               />
             </div>
 
@@ -159,6 +162,22 @@ const ImageGalleryPage = () => {
           </div>
         ))}
       </div>
+     {image && (
+  <div className="relative mx-auto max-w-lg rounded-lg overflow-hidden shadow-lg border border-gray-200">
+    <img
+      src={image}
+      alt="Preview"
+      className="w-full h-auto object-cover"
+    />
+    <button
+      onClick={() => setImage("")}
+      className="absolute top-2 right-2 w-8 h-8 flex items-center justify-center bg-black bg-opacity-60 hover:bg-opacity-80 text-white text-2xl rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
+      aria-label="Remove image"
+    >
+      ×
+    </button>
+  </div>
+)}
     </div>
   );
 };
