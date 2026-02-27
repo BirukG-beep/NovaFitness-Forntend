@@ -5,10 +5,8 @@ const btnStyles = `hover:text-red-600 text-white transition-colors duration-300 
 
 function NavButtons({ onToggleNav}) {
   return (
-    <div className="flex items-center justify-between gap-7">
-      <button className={`md:hidden ${btnStyles}`} onClick={onToggleNav}>
-        <FaBars className="h-6 w-6" />
-      </button>
+    <div className="flex items-center justify-end gap-7">
+     
       <Link href="/" className={btnStyles}>
       </Link>
       <button className={btnStyles}>
@@ -22,6 +20,9 @@ function NavButtons({ onToggleNav}) {
           Join class now
         </Link>
       </div>
+       <button className={`md:hidden ${btnStyles}`} onClick={onToggleNav}>
+        <FaBars className="h-6 w-6" />
+      </button>
     </div>
   );
 }

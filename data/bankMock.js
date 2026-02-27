@@ -2,7 +2,7 @@ export const banksMock = [
   {
     _id: "1",
     bankName: "Awash Bank",
-    to: "CoreFit Gym",
+    to: "Nova Gym",
     accountNumber: "1000123456789",
     imageUrl: "https://via.placeholder.com/150",
     visibility: true,
@@ -11,7 +11,7 @@ export const banksMock = [
   {
     _id: "2",
     bankName: "Commercial Bank of Ethiopia",
-    to: "CoreFit Gym",
+    to: "Nova Gym",
     accountNumber: "1000456789123",
     imageUrl: "https://via.placeholder.com/150",
     visibility: false,
@@ -20,7 +20,7 @@ export const banksMock = [
   {
     _id: "3",
     bankName: "Dashen Bank",
-    to: "CoreFit Gym",
+    to: "Nova Gym",
     accountNumber: "1000789456123",
     imageUrl: "https://via.placeholder.com/150",
     visibility: true,
@@ -29,7 +29,7 @@ export const banksMock = [
   {
     _id: "4",
     bankName: "Bank of Abyssinia",
-    to: "CoreFit Gym",
+    to: "Nova Gym",
     accountNumber: "1000111222333",
     imageUrl: "https://via.placeholder.com/150",
     visibility: false,

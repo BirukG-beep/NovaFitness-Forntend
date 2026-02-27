@@ -17,25 +17,25 @@ const Payment = () => {
     {
       name: "Awash Bank",
       src: "/awashbank.png",
-      accountName: "CoreFit Gym",
+      accountName: "Nova Gym",
       accountNumber: "1000123456789",
     },
     {
       name: "CBE",
       src: "/cbe.png",
-      accountName: "CoreFit Gym",
+      accountName: "Nova Gym",
       accountNumber: "2000987654321",
     },
     {
       name: "Oromia Bank",
       src: "/oromia.png",
-      accountName: "CoreFit Gym",
+      accountName: "Nova Gym",
       accountNumber: "3000111122223",
     },
     {
       name: "Telebirr",
       src: "/telebirr.png",
-      accountName: "CoreFit Gym",
+      accountName: "Nova Gym",
       accountNumber: "0912345678",
     },
   ];

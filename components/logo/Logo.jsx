@@ -5,7 +5,7 @@ function Logo({ size = "w-12", type = "white" }) {
     <Link href="/" className="focus flex text-red-500 uppercase font-bold font-serif  items-center gap-5">
       <img
         src={`${type === "black" ? "/images/logo/logo.png" : "/images/logo/logo.png"}`}
-        alt="Corefit logo"
+        alt="Nova logo"
         className={`h-auto ${size} rounded-full`}
       />
       Nova Fitness Center

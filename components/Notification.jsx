@@ -141,7 +141,7 @@ const handleToggleVisibility = async (id)  =>{
             {/* Close Button */}
             <button
               onClick={() => setImage("")}
-              className="absolute top-3 right-4 bg-white rounded-full w-5 h-5 flex justify-center items-center text-gray-700 hover:text-red-500 text-2xl"
+              className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white rounded-full w-10 h-10 flex justify-center items-center text-gray-700 hover:text-red-500 text-4xl"
             >
               &times;
             </button>

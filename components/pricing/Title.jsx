@@ -7,7 +7,7 @@ function Title() {
       <SecondaryHeading>Pricing chart</SecondaryHeading>
       <TertiaryHeading>Exclusive pricing plan</TertiaryHeading>
       <p className="mx-auto max-w-[50ch] font-medium text-gray-700">
-        CoreFit an unknown printer took a galley of type and scrambled make a type
+        Nova an unknown printer took a galley of type and scrambled make a type
         specimen book.
       </p>
     </div>
