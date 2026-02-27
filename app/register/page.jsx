@@ -12,7 +12,6 @@ function RegisterPage() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    email: "",
     password: "",
     confirmPassword: "",
     phone: "",
@@ -45,7 +44,6 @@ function RegisterPage() {
       setUser({
         firstName: formData.firstName || "",
         lastName: formData.lastName || "",
-        email: formData.email || "",
         phone: formData.phone || "",
         userId: result.id || "",
         createdAt: result.createdAt || "",
@@ -91,15 +89,7 @@ function RegisterPage() {
           />
         </div>
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-          className="w-full border p-3 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-black text-gray-900"
-        />
-
+      
         <input
           type="tel"
           name="phone"

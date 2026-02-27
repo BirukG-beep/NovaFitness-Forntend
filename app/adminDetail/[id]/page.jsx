@@ -7,7 +7,10 @@ import { FaUniversity, FaUser, FaCreditCard, FaArrowLeft } from "react-icons/fa"
 import { toEthiopian } from "ethiopian-date";
 import DateFilter from "@/components/DateFilter";
 import DueBadge from "@/components/DueBadge";
-import {useTheme} from "@/context/ThemeContext"
+import {useTheme} from "@/context/ThemeContext";
+import { getUser } from "@/services/getUser";
+
+
 
 const ImageGalleryPage = () => {
   const {theme} = useTheme();
@@ -15,7 +18,7 @@ const ImageGalleryPage = () => {
   const router = useRouter();
 
   const [image , setImage] = useState("")
-
+  const [user, setUser] = useState(null);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -67,6 +70,24 @@ const ImageGalleryPage = () => {
     }
   }, [id]);
 
+    useEffect(() => {
+    const fetchUser = async () => {
+      const data = await getUser(id);
+      console.log(data)
+      setUser(data.user);
+    };
+
+    fetchUser();
+  }, []);
+
+ const convertToEthiopia = (dateString) => {
+  const [month, day, year] = dateString.split("/").map(Number);
+
+  const [ethYear, ethMonth, ethDay] = toEthiopian(year, month, day);
+
+  return `${ethDay}/${ethMonth}/${ethYear}`;
+};
+
   // ✅ Filter Logic
   const filteredData = useMemo(() => {
     return data.filter((item) => {
@@ -89,7 +110,28 @@ const ImageGalleryPage = () => {
         <FaArrowLeft />
         Back to Admin
       </button>
-
+<div className="flex justify-center mb-6">
+  {user ? (
+    <div
+      className={`px-6 py-4 rounded-2xl shadow-lg text-center transition-all
+      ${theme === "dark"
+        ? "bg-slate-900 text-white border border-slate-700"
+        : "bg-white text-gray-800 border border-gray-200"
+      }`}
+    >
+      <p className="text-lg font-semibold">
+        {user.firstName} {user.lastName}
+      </p>
+      <p className="text-sm text-gray-400 mt-1">
+        {convertToEthiopia("2/27/2026")}
+      </p>
+    </div>
+  ) : (
+    <p className="text-gray-500 animate-pulse text-center">
+      Loading...
+    </p>
+  )}
+</div>
       {/* Title */}
       <h1 className="text-3xl font-bold text-center mb-8">
         Bank Accounts

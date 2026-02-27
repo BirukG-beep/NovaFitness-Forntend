@@ -10,8 +10,6 @@ const LoginPage = () => {
   const router = useRouter();
   //for redux state
   const dispatch = useDispatch();
-
-  const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -23,8 +21,8 @@ const LoginPage = () => {
     setIsLoading(true);
 
     // Validation
-    if (!email.trim() && !phone.trim()) {
-      setError("Please provide either email or phone number");
+    if (!phone.trim()) {
+      setError("Please provide phone number");
       setIsLoading(false);
       return;
     }
@@ -36,7 +34,7 @@ const LoginPage = () => {
     }
 
     // Choose identifier: prefer email if both are filled (or change logic as needed)
-    const identifier = email.trim() || phone.trim();
+    const identifier = phone.trim();
 
     const payload = {
       identifier,
@@ -52,13 +50,12 @@ const LoginPage = () => {
     dispatch(setUser({
       firstName: userData.firstName || "",
       lastName: userData.lastName  || "",
-      email:    userData.email     || "",
       phone:    userData.phone     || "",
       userId:   userData._id    || "",
       createdAt: userData.createdAt || ""
     }));
 
-    if (userData.email === "adminnova@gmail.com") {
+    if (userData.phone === "0987654321") {
       router.push("/admin");
     } else {
       router.push("/user");
@@ -84,13 +81,6 @@ const LoginPage = () => {
         )}
 
         <form onSubmit={handleSubmit}>
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="w-full border p-3 rounded-lg mb-4 text-gray-800 placeholder:text-gray-500 placeholder:opacity-100 focus:ring-2 focus:ring-black"
-          />
 
           <input
             type="tel"

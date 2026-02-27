@@ -150,7 +150,9 @@ const MonthlyStatusTable = ({
 
       const overdueDays = toast[user._id] || 0;
 
-      if (filter === 120) return overdueDays >= 120;
+      if (filter === 10) return overdueDays >= 1;
+
+      if (filter === 20 ) return overdueDays  >= 11;
 
       return overdueDays >= filter && overdueDays < filter + 30;
     });
