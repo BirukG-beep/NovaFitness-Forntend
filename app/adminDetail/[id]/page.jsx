@@ -125,6 +125,9 @@ const ImageGalleryPage = () => {
       <p className="text-sm text-gray-400 mt-1">
         {convertToEthiopia("2/27/2026")}
       </p>
+      <p className="text-sm text-gray-400 mt-1">
+        {user.phone}
+      </p>
     </div>
   ) : (
     <p className="text-gray-500 animate-pulse text-center">

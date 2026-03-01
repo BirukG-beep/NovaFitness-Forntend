@@ -16,7 +16,7 @@ function Hero() {
 
             <PrimaryHeading />
 
-            <PrimaryButton to="/classes">Our classes</PrimaryButton>
+            <PrimaryButton to="/login">Our classes</PrimaryButton>
           </div>
       </div>
          

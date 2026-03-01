@@ -12,7 +12,7 @@ function ChooseUs() {
         <div className="text-center md:text-left">
           <Title />
           <Features />
-          <SecondaryButton to="/classes">Our classes</SecondaryButton>
+          <SecondaryButton to="/login">Our classes</SecondaryButton>
         </div>
       </div>
     </section>

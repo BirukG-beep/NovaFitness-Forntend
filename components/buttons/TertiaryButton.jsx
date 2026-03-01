@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
-function TertiaryButton({ to = "/", children }) {
+function TertiaryButton({ to = "/login", children }) {
   return (
     <Link
       href={to}

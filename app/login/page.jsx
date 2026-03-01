@@ -111,13 +111,13 @@ const LoginPage = () => {
             {isLoading ? "Logging in..." : "Login"}
           </button>
 
-          <button
+          {/* <button
             type="button"
             onClick={() => router.push("/forget-password")}
             className="w-full mt-3 underline text-gray-500 hover:text-gray-700"
           >
             Forget Password
-          </button>
+          </button> */}
 
           <button
             type="button"

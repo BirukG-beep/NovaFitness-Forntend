@@ -7,9 +7,10 @@ import Notification from "@/components/Notification";
 import { FaCog } from "react-icons/fa";
 import Settings from "@/components/Settings";
 import { toEthiopian } from "ethiopian-date";
+import Password from "@/components/UsersList";
 
 const Admin = () => {
-  const [admintable, setAdmintable] = useState(true);
+  const [admintable, setAdmintable] = useState("Trainer");
   const [list, setList] = useState(false);
   const [feature, setFeature] = useState("theme");
 
@@ -48,7 +49,7 @@ const Admin = () => {
     <div className="bg-gray-50 relative min-h-screen flex">
       <SideBarAdmin setAdmintable={setAdmintable} />
 
-      {admintable ? (
+      {admintable === "Trainer" &&
         <AdminTable
           ethYear={date.ethYear}
           ethMonth={date.ethMonth}
@@ -57,10 +58,11 @@ const Admin = () => {
           selectedUser={selectedUser}
           filter={filter}
         />
-      ) : (
-        <Notification data={data} />
-      )}
-
+      }
+      
+        {admintable === "Notification" && <Notification data={data} />}
+        {admintable === "Password" && <Password />}
+    
       <FaCog
         size={30}
         className="text-gray-400 cursor-pointer absolute top-4 right-4"

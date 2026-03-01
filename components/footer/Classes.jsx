@@ -6,23 +6,23 @@ function Classes() {
   return (
     <div className="space-y-5 2xl:w-48 2xl:justify-self-center">
       <h4 className="relative text-gray-700 pb-2 text-xl font-semibold capitalize before:absolute before:bottom-0 before:h-1 before:w-16 before:bg-red-600">
-        Our classes
+        Our pages
       </h4>
       <ul className="space-y-5">
         <li>
           <Link href="/" className={linkStyles}></Link>
         </li>
         <li>
-          <Link  href="/" className={linkStyles}>Aerobics classes</Link>
+          <Link  href="/about" className={linkStyles}>About</Link>
         </li>
         <li>
-          <Link href="/"  className={linkStyles}>Dance classes</Link>
+          <Link href="/contact"  className={linkStyles}>Contact</Link>
         </li>
         <li>
-          <Link href="/"  className={linkStyles}>Boxing and Crossfit coach</Link>
+          <Link href="/pricing"  className={linkStyles}>Pricing</Link>
         </li>
         <li>
-          <Link href="/"  className={linkStyles}>nutritionist and girls session</Link>
+          <Link href="/description"  className={linkStyles}>Description</Link>
         </li>
       </ul>
     </div>

@@ -126,10 +126,10 @@ const Settings = ({
         {feature === "filter" && (
           <TimeLine
             options={[
-              { label: "0M", value: 0 },
-              { label: "1M", value: 10 },
-              { label: "2M", value: 20},
-              { label: "3M", value: 30},
+              { label: "0D", value: 0 },
+              { label: "10D", value: 10 },
+              { label: "20D", value: 20},
+              { label: "30D", value: 30},
             ]}
             value={filter}
             onChange={setFilter}

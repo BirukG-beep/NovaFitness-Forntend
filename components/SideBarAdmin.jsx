@@ -1,5 +1,6 @@
 "use client";
 import { FiBell } from "react-icons/fi";
+import { FiDatabase } from "react-icons/fi";
 import { useSelector } from "react-redux";
 const Sidebar = ({setAdmintable}) => {
     const user = useSelector((state)=>state.user)
@@ -16,15 +17,19 @@ const Sidebar = ({setAdmintable}) => {
       <div className="flex flex-col gap-2 mt-6">
 
         {/* Supporter */}
-        <div className="flex items-center justify-center md:justify-start gap-4 p-3 hover:bg-gray-800 rounded-lg cursor-pointer transition" onClick={()=>setAdmintable(true)}>
+        <div className="flex items-center justify-center md:justify-start gap-4 p-3 hover:bg-gray-800 rounded-lg cursor-pointer transition" onClick={()=>setAdmintable("Trainer")}>
           <img src='/images/featured-class/cycling-white.png' className="w-5"  alt="webp"  />
           <span className="text-lg hidden md:flex">Trainer</span>
         </div>
 
         {/* Notification */}
-        <div className="flex items-center gap-4 p-3 justify-center md:justify-start hover:bg-gray-800 rounded-lg cursor-pointer transition" onClick={()=>setAdmintable(false)}>
+        <div className="flex items-center gap-4 p-3 justify-center md:justify-start hover:bg-gray-800 rounded-lg cursor-pointer transition" onClick={()=>setAdmintable("Notification")}>
           <FiBell size={20} strokeWidth={1} className="text-[#eee] text-center"/>
           <span className="text-lg hidden md:flex text-center">Notification</span>
+        </div>
+        <div className="flex items-center gap-4 p-3 justify-center md:justify-start hover:bg-gray-800 rounded-lg cursor-pointer transition" onClick={()=>setAdmintable("Password")}>
+          <FiDatabase size={20} strokeWidth={1} className="text-[#eee] text-center"/>
+          <span className="text-lg hidden md:flex text-center">ForgetPassword</span>
         </div>
 
       </div>
