@@ -18,25 +18,25 @@ const Payment = () => {
       name: "Awash Bank",
       src: "/awashbank.png",
       accountName: "Nova Gym",
-      accountNumber: "1000123456789",
+      accountNumber: "01320943673100",
     },
     {
-      name: "CBE",
-      src: "/cbe.png",
+      name: "Abyssinia",
+      src: "/abyssinia.png",
       accountName: "Nova Gym",
-      accountNumber: "2000987654321",
+      accountNumber: "23964438",
     },
     {
       name: "Oromia Bank",
       src: "/oromia.png",
       accountName: "Nova Gym",
-      accountNumber: "3000111122223",
+      accountNumber: "1000500507911",
     },
     {
-      name: "Telebirr",
-      src: "/telebirr.png",
+      name: "CBE",
+      src: "/cbe.png",
       accountName: "Nova Gym",
-      accountNumber: "0912345678",
+      accountNumber: "1000654491104",
     },
   ];
 

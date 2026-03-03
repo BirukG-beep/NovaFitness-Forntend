@@ -55,7 +55,7 @@ const LoginPage = () => {
       createdAt: userData.createdAt || ""
     }));
 
-    if (userData.phone === "0987654321") {
+    if (userData.phone === "0923704250") {
       router.push("/admin");
     } else {
       router.push("/user");
