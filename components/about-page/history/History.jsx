@@ -12,9 +12,7 @@ function History() {
           />
           <TertiaryHeading>Our history</TertiaryHeading>
           <p className="font-medium text-white">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit Exercitation
-            veniam consequat.
+           Since 2017 E.C., we have been dedicated to transforming lives and developing skilled fitness trainers who are making a real impact in people’s lives. Through continuous growth, commitment, and passion for excellence, we strive to build a stronger, healthier community every day.
           </p>
         </div>
 
@@ -34,9 +32,7 @@ function History() {
           />
           <TertiaryHeading>Our Mission</TertiaryHeading>
           <p className="font-medium text-white">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit Exercitation
-            veniam consequat.
+     Our mission at Fitness Nova is to empower individuals to live healthier, stronger, and more confident lives through quality training, continuous support, and a motivating fitness environment. We are committed to inspiring transformation and building a community focused on growth and excellence.
           </p>
         </div>
 

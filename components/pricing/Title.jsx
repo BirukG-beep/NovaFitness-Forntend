@@ -5,10 +5,9 @@ function Title() {
   return (
     <div className="relative z-20">
       <SecondaryHeading>Pricing chart</SecondaryHeading>
-      <TertiaryHeading>Exclusive pricing plan</TertiaryHeading>
+      <TertiaryHeading>Nova pricing plan</TertiaryHeading>
       <p className="mx-auto max-w-[50ch] font-medium text-gray-700">
-        Nova an unknown printer took a galley of type and scrambled make a type
-        specimen book.
+         fixed plans designed to match your goals. Get access to professional training, modern equipment, and a supportive fitness community at an affordable price.
       </p>
     </div>
   );

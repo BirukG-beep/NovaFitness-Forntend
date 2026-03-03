@@ -39,7 +39,7 @@ const DescriptionPage = () => {
   return (
 <div className="min-h-screen bg-black">
   <NavBar />
-   <HeroPages />
+   <HeroPages page="Description"/>
   <div className="px-6 md:px-20 py-16">
     <h1 className="text-4xl font-bold text-center mb-16 text-white">
       How It Works

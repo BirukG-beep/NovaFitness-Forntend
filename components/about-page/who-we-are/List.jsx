@@ -1,10 +1,12 @@
 function List() {
   return (
     <ul className="list-disc space-y-2 px-5 font-semibold text-gray-450">
-      <li>Nova an unknown printer</li>
-      <li>Scraey aretea bled makea type</li>
-      <li>Bookhas survived not onlyive</li>
-      <li>Centuries but also the leap electronic</li>
+     <li>Professional Gym & Strength Training</li>
+     <li>High-Energy Dance Fitness Programs</li>
+     <li>Personalized Nutrition & Diet Guidance</li>
+     <li>Dynamic Aerobics & Cardio Sessions</li>
+     <li>Boxing & Combat Training Classes</li>
+     <li>Group Fitness & Wellness Programs</li>
     </ul>
   );
 }

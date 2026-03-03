@@ -9,14 +9,14 @@ function Info() {
         We are here for help you To Shape Your Body
       </h3>
       <p className="font-medium text-gray-300">
-       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente molestias excepturi, ipsam alias dolor, in debitis labore rem, non obcaecati eos vel quos. Minus cumque eum facere molestiae iusto adipisci!
+       We are dedicated to helping you achieve your fitness goals with expert guidance, personalized workout plans, and the motivation you need to succeed. Whether you want to build muscle, lose weight, or improve your overall health, our team is here to support you every step of the way. Start your fitness journey with us and transform your body with confidence.
       </p>
       <div className="grid 2xl:grid-cols-2 2xl:gap-y-8">
         <div>
-          <h4 className={headingStyles}>Bishoftu, Ethipia</h4>
+          <h4 className={headingStyles}>Bishoftu, Ethiopia</h4>
           <address className="font-medium not-italic text-gray-300">
-            Shah Faisal Colony
-            <br /> Karachi
+            around Meneharia
+            <br /> Cooperative Bank of Oromia 3rd floor
           </address>
         </div>
         <div>

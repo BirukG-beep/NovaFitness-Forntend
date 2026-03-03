@@ -7,10 +7,7 @@ function Title() {
       <SecondaryHeading>Who we are</SecondaryHeading>
       <TertiaryHeading>We will give you strength and health</TertiaryHeading>
       <p className="font-medium text-gray-300">
-        Nova an unknown printer took a galley type and scraey aretea bled make
-        a type specimen book. May has survived not onlyive centuries but also
-        the leap electronic.Novan unknown printer took a galley of type and
-        scraey aretea.
+    At Fitness Nova, we are committed to helping you unlock your full potential. Our mission is to provide a motivating and supportive environment where everyone can achieve their fitness goals. Whether you want to build strength, lose weight, or improve your overall health, Fitness Nova is here to guide you every step of the way. Your transformation starts here.
       </p>
     </div>
   );

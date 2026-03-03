@@ -19,20 +19,6 @@ function Classes() {
         </div>
       </div>
 
-      {/* Karate */}
-      <div
-        className={`${cardStyles} after:bg-[url('/images/featured-class/karate-white.png')] hover:after:bg-[url('/images/featured-class/karate-red.png')]`}
-      >
-        <div
-          className={`${bgStyles} bg-[url('/images/featured-class/karate.webp')]`}
-        ></div>
-        <div className="absolute bottom-0 z-10 mb-5 ml-5 cursor-text space-y-2 text-white">
-          <h4 className="text-3xl font-bold">Karate</h4>
-          <p className="whitespace-nowrap bg-red px-3 py-0.5">
-            Friday: 10:00am-11:00am
-          </p>
-        </div>
-      </div>
 
       {/* Power */}
       <div
@@ -72,7 +58,7 @@ function Classes() {
           className={`${bgStyles} bg-[url('/images/featured-class/martial-arts.webp')]`}
         ></div>
         <div className="absolute bottom-0 z-10 mb-5 ml-5 cursor-text space-y-2 text-white">
-          <h4 className="text-3xl font-bold">Martial Arts</h4>
+          <h4 className="text-3xl font-bold">Boxing and Cross-fit</h4>
           <p className="whitespace-nowrap bg-red px-3 py-0.5">
             Sunday: 6:00pm-7:00pm
           </p>

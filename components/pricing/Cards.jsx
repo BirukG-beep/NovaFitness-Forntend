@@ -38,7 +38,7 @@ function Cards() {
 
       <span className="flex items-center gap-2">
         <span className="text-gray-300">if</span>
-        <span className="font-bold">Loker</span>
+        <span className="font-bold">Locker</span>
       </span>
 
       {/* Salary icon + amount */}
@@ -80,7 +80,7 @@ function Cards() {
 
       <span className="flex items-center gap-2">
         <span className="text-gray-300">if</span>
-        <span className="font-bold">Loker</span>
+        <span className="font-bold">Locker</span>
       </span>
 
       {/* Salary icon + amount */}
@@ -122,7 +122,7 @@ function Cards() {
 
       <span className="flex items-center gap-2">
         <span className="text-gray-300">if</span>
-        <span className="font-bold">Loker</span>
+        <span className="font-bold">Locker</span>
       </span>
 
       {/* Salary icon + amount */}
@@ -163,7 +163,7 @@ function Cards() {
 
       <span className="flex items-center gap-2">
         <span className="text-gray-300">if</span>
-        <span className="font-bold">Loker</span>
+        <span className="font-bold">Locker</span>
       </span>
 
       {/* Salary icon + amount */}
@@ -204,7 +204,7 @@ function Cards() {
 
       <span className="flex items-center gap-2">
         <span className="text-gray-300">if</span>
-        <span className="font-bold">Loker</span>
+        <span className="font-bold">Locker</span>
       </span>
 
       {/* Salary icon + amount */}
@@ -244,7 +244,7 @@ function Cards() {
 
       <span className="flex items-center gap-2">
         <span className="text-gray-300">if</span>
-        <span className="font-bold">Loker</span>
+        <span className="font-bold">Locker</span>
       </span>
 
       {/* Salary icon + amount */}
