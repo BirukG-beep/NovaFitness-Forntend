@@ -31,10 +31,10 @@ function Info() {
         <div>
           <h4 className={headingStyles}>Information</h4>
           <a
-            href="tel:+98-21-225-429-71"
+            href="tel:+251923704250"
             className="block font-medium text-gray-300"
           >
-            +92 31523697586
+            +251923704250
           </a>
           <a
             href="novafitness51@gmail.com"
